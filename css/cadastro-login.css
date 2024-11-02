@@ -5,6 +5,7 @@ html {
   margin: 0;
   padding: 0;
   font-family: "Roboto" sans-serif;
+  background-color: #8eb041;
 }
 
 .img-col {
@@ -18,9 +19,7 @@ html {
   height: 100%;
   width: 100%;
 }
-.fundo_login {
-  background-color: #8eb041;
-}
+
 .btn {
   background-color: #84469b;
   border: none;
@@ -47,10 +46,10 @@ html {
   gap: 20px;
 }
 
-.form-label{
+.form-label {
   color: #fff;
 }
-.container-fluid{
+.container-fluid {
   padding: 0;
 }
 
@@ -75,6 +74,17 @@ header,
   background-color: #ffff;
 }
 
-@media(max-width: 450px){
-
+@media (max-width: 766px) {
+  .div-img {
+    display: none;
+  }
+  .container-fluid {
+    padding-top: 130px;
+    width: 350px;
+  }
+}
+@media (min-width: 767px) and (max-width: 1077px) {
+  .bt-senha {
+    height: 80px;
+  }
 }
