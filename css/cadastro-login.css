@@ -1,0 +1,80 @@
+/* Gerais */
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto" sans-serif;
+}
+
+.img-col {
+  height: 100vh;
+}
+.form-floating {
+  padding-bottom: 10px;
+}
+.img-fluid {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.fundo_login {
+  background-color: #8eb041;
+}
+.btn {
+  background-color: #84469b;
+  border: none;
+  border-radius: 9px;
+  height: 48px;
+  font-size: 24px;
+}
+.btn:hover {
+  background-color: #84469b;
+}
+.esqueci-senha {
+  text-align: center;
+  padding-top: 10px;
+}
+.cadastro {
+  color: #84469b;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+
+.radio-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.form-label{
+  color: #fff;
+}
+.container-fluid{
+  padding: 0;
+}
+
+/* Navbar */
+header,
+.navbar {
+  background-color: #ffff;
+}
+#nav-container {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+#logo {
+  width: 97px;
+  height: 91px;
+}
+.navbar-brand {
+  padding: 0;
+  color: #637046;
+  font-style: bold;
+  font-size: 36px;
+  background-color: #ffff;
+}
+
+@media(max-width: 450px){
+
+}
