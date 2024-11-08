@@ -19,6 +19,7 @@
 
     <!-- FontAwesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
@@ -28,6 +29,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <!-- Java Script -->
+    <script src="js/scripts.js" defer></script>
+
     <title>Banco de Tintas</title>
 </head>
 
@@ -56,8 +60,13 @@
                         <h1 class="h3 mb-3 fw-bold text-light py-4">Cadastro</h1>
 
                         <!-- Nome -->
-                        <div class="mb-3">
+                        <div id="nomePessoa" class="mb-3">
                             <label for="formInput" class="form-label">Nome</label>
+                            <input type="text" class="form-control" id="nome" required>
+                        </div>
+                        <!-- Nome Empresa-->
+                        <div id="nomeEmpresa" class="mb-3" style="display: none;">
+                            <label for="formInput" class="form-label">Nome da empresa</label>
                             <input type="text" class="form-control" id="nome" required>
                         </div>
 
@@ -70,23 +79,28 @@
                         <!-- Pessoa fisica ou juridica -->
                         <div class="radio-container">
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="opcao" id="opcao1" value="opcao1" checked>
-                                <label class="form-check-label" for="opcao1">
+                                <input class="form-check-input" type="radio" name="tipoPessoa" id="p_fisica" value="fisica" onclick="cpfOuCnpj()">
+                                <label class="form-check-label" for="p_fisica">
                                     Pessoa física
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="opcao" id="opcao1" value="opcao1">
-                                <label class="form-check-label" for="opcao1">
+                                <input class="form-check-input" type="radio" name="tipoPessoa" id="p_juridica" value="juridica" onclick="cpfOuCnpj()">
+                                <label class="form-check-label" for="p_juridica">
                                     Pessoa juridica
                                 </label>
                             </div>  
                         </div>
 
                         <!-- CPF -->
-                        <div class="mb-3">
+                        <div id="campoCPF" class="mb-3">
                             <label for="formInput" class="form-label">CPF</label>
                             <input type="text" class="form-control" id="cpf" placeholder="000.000.000-00" required>
+                        </div>
+                        <!-- CNPJ -->
+                        <div id="campoCNPJ" class="mb-3" style="display: none;">
+                            <label for="formInput" class="form-label">CNPJ</label>
+                            <input type="text" class="form-control" id="cnpj" placeholder="00.000.000/0000-00" required>
                         </div>
                         
                         <!-- Telefone -->
