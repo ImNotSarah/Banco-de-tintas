@@ -17,3 +17,7 @@ function cpfOuCnpj() {
         nomeEmpresa.style.display = "block";
     }
 }
+
+function atualizarBotao(opcao) {
+    document.getElementById('dropdownMenuButton').innerText = opcao;
+}

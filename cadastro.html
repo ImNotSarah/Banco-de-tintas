@@ -114,7 +114,23 @@
                             <label for="formInput" class="form-label">Senha</label>
                             <input type="password" class="form-control" id="senha" required>
                         </div>
+                        <!-- Como conheceu? -->
 
+                        <div class="mb-3">
+                            <label for="formInput" class="form-label">Como você conheceu o Banco de Tintas?</label>
+                            <div class="dropdown">
+                                <button class="listaSuspensa dropdown-toggle d-block w-50 text-start" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Selecione uma opção
+                                </button>
+                                <!-- Lista suspensa -->
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <li><a class="dropdown-item" href="#" onclick="atualizarBotao('Fatec')">Fatec</a></li>
+                                    <li><a class="dropdown-item" href="#" onclick="atualizarBotao('Instagram')">Instagram</a></li>
+                                    <li><a class="dropdown-item" href="#" onclick="atualizarBotao('Linkedin')">Linkedin</a></li>
+                                    <li><a class="dropdown-item" href="#" onclick="atualizarBotao('Pesquisa Google')">Pesquisa Google</a></li>
+                                </ul>
+                            </div>
+                        </div>
 
                         <label class="cadastro">Já possui cadastro?</label>
                         <a class="text-light" href="./login.html">Entrar</a>

@@ -20,7 +20,22 @@ html {
   height: 100%;
   width: 100%;
 }
+.flex-container {
+    display: flex;                /* Ativa o Flexbox */
+    align-items: center;          /* Alinha o label e o input verticalmente ao centro */
+    gap: 10px;                    /* Espaço entre o label e o input */
+    max-width: 500px;             /* Largura máxima do contêiner */
+    margin: 20px;
+}
 
+/* Define o campo de entrada flexível */
+.flex-input {
+    flex: 1;                      /* Faz o input ocupar todo o espaço disponível */
+    padding: 10px;                /* Espaçamento interno do input */
+    border: 1px solid #ccc;       /* Borda do input */
+    border-radius: 5px;           /* Bordas arredondadas */
+    font-size: 16px;              /* Tamanho da fonte */
+}
 .btn {
   background-color: #84469b;
   border: none;
@@ -53,6 +68,28 @@ html {
 .container-fluid {
   padding: 0;
 }
+.listaSuspensa{
+  height: 30px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 9px;
+}
+.dropdown-toggle::after {
+  position: absolute;
+  right: 240px;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: auto;
+}
+
+.dropdown-toggle {
+  padding-right: 2rem;
+  text-align: left;
+}
+.dropdown-item:hover{
+  background-color: #e4e4e4;
+}
+
 
 /* Navbar */
 header,
