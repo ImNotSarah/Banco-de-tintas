@@ -1,6 +1,6 @@
 /* Gerais */
 body {
-  font-family: "Roboto" sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .row {
@@ -17,33 +17,18 @@ li {
   font-size: 14px;
 }
 
-header,
-.navbar {
-  background-color: #ffff;
-}
-#nav-container {
-  padding-top: 0;
-  padding-bottom: 0;
-}
-#logo {
-  width: 97px;
-  height: 91px;
-}
-.navbar-brand {
-  padding: 0;
-  color: #637046;
-  font-style: bold;
-  font-size: 36px;
-  background-color: #ffff;
-}
+/* containers e inputs */
 .caixa1 {
   display: flex;
   align-items: center;
   justify-items: center;
+  margin-left: 20px;
 }
+
 .caixa {
   background-color: #ffff;
 }
+
 .input-wrapper {
   padding: 8px 12px;
   display: flex;
@@ -55,9 +40,11 @@ header,
   width: 847px;
   height: 60px;
 }
+
 .input-wrapper i {
   color: #8eb041;
 }
+
 .input-wrapper input {
   background-color: transparent;
   border: none;
@@ -66,9 +53,38 @@ header,
   height: 50px;
   font-size: 20px;
 }
+
 .input-wrapper input:focus-visible {
-  outline-offset: none;
   outline: none;
+}
+
+/* navbar */
+header,
+.navbar {
+  background-color: #ffff;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+}
+
+#nav-container {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+#logo {
+  width: 97px;
+  height: 91px;
+}
+
+.navbar-brand {
+  padding: 0;
+  color: #637046;
+  font-weight: bold;
+  font-size: 36px;
+  background-color: #ffff;
 }
 
 #navbar-links a {
@@ -77,15 +93,177 @@ header,
   padding-left: 70px;
 }
 
-.navbar-expand-lg .navbar-nav .nav-ink {
+.nav-text {
+  margin-top: 5px;
+  width: auto;
+  height: 60px;
+  margin: 0 10px;
+}
+
+.nav-text:hover {
+  color: #423746 !important;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
   padding: 1rem 0.8rem;
 }
+
+/* botões */
 .btn-cadastre {
   border-radius: 9px;
   border: none;
   background-color: #8eb041;
   color: #423746;
-  width: 256;
-  height: 60;
+  width: 256px;
+  height: 60px;
+  padding: 5px;
+  font-weight: bold;
+  margin-left: 40px;
 }
 
+.btn-cadastre:hover {
+  background-color: #637046;
+  color: white;
+  border: none;
+}
+
+.doar-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  padding: 10px;
+}
+
+
+/*menu mobile*/
+.titulo-menu-mobile{
+  color: #423746;
+  font-weight: bold;
+}
+
+.offcanvas {
+  background-color: #ffff; 
+}
+
+.offcanvas-body {
+  display: flex;
+  flex-direction: column; 
+}
+
+.offcanvas-header {
+  justify-content: space-between; 
+}
+
+.offcanvas-body .nav-item {
+  color: #8eb041; 
+  font-size: 24px; 
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.offcanvas-body .nav-item:hover {
+  color: #423746; 
+}
+
+.offcanvas-body .btn-menu-mobile{
+  border-radius: 9px;
+  border: none;
+  background-color: #8eb041;
+  color: #423746;
+  width: auto;
+  height: 60px;
+  padding: 5px;
+  font-weight: bold;
+  font-size: 22px;
+  font-family: "Roboto", sans-serif;
+  margin-top: 10px;
+}
+
+.offcanvas-body .btn-menu-mobile:hover{
+  background-color: #637046;
+  color: white;
+
+}
+
+.offcanvas-body .caixa1 {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  margin-left: 20px;
+  width: 100%; 
+}
+
+.offcanvas-body .caixa {
+  background-color: #ffff;
+}
+
+.offcanvas-body .input-wrapper {
+  display: flex;
+  align-items: start;
+  background-color: #e8e9ee;
+  border-radius: 9px;
+  border: 1px solid #8eb041;
+  width: 370px; 
+  height: 60px;
+  margin-left: -40px;
+  margin-top: 10px;
+}
+
+.offcanvas-body .input-wrapper i {
+  font-size: 20px;
+  position: relative;
+  top: 12px;
+}
+
+
+
+
+
+@media screen and (max-width: 1522px) {
+  .input-wrapper {
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 1645px) {
+  .input-wrapper {
+    width: 600px;
+  }
+
+}
+
+@media screen and (max-width: 1720px) {
+  .input-wrapper {
+    width: 650px;
+
+  }
+}
+
+@media screen and (max-width: 1753px) {
+  .input-wrapper {
+    width: 500px;
+  }
+  .btn-cadastre {
+    width: 200px;
+  }
+
+  #navbar-links a {
+    padding-left: 50px;
+  }
+}
+
+@media screen and (max-width: 1860px) {
+  .input-wrapper {
+    width: 700px;
+
+  }
+}
+
+@media screen and (max-width: 1990px) {
+  .input-wrapper {
+    width: 500px;
+  }
+
+}

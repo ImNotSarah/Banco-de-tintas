@@ -1,0 +1,114 @@
+
+  .img_logo1{
+    padding-left: -10px !important;
+  }
+
+  .card-body{
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.554);
+    border-radius: 9px;
+  }
+  .btn_card{
+    width: 100%;
+
+  }
+
+  footer {
+      background-color: #f8f9fa; 
+      padding: 40px 0; 
+  }
+
+  .text_a_link{
+      text-decoration: none !important;
+  }
+
+  .text_a_link:hover{
+      text-decoration: underline !important;
+  }
+  .opcoes a{
+    text-decoration: none;
+    margin-top: 20px;
+  }
+
+  .text_neon_green{
+    color: #aef01d;
+    font-weight: bold;
+   }
+
+  .text_neon_green:hover{
+      color: white;
+  }
+  .pad_top_20{
+    padding-top: 20px;
+    
+  }
+
+  .section_2 {
+    margin-top: 100px;
+    background-color: #84469B;
+    padding: 20px 0; 
+    height: auto; 
+  }
+
+  .section_3 {
+    margin-top: 100px;
+    background-color: #ffffff; 
+    padding: 20px 0; /
+  }
+
+
+.navbar{
+    background-color: rgb(207, 206, 206) !important;
+}
+
+.img_logo1{
+    padding-left: -10px !important;
+}
+.card-body{
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.554);
+    border-radius: 9px;
+}
+.btn_card{
+    width: 100%;
+}
+.card_transparent{
+    background-color: transparent;
+    border: none;
+}
+
+
+  /*responsividade da navbar*/
+  @media (max-width: 992px) {
+      .navbar-collapse, .navbar-nav, .search-container, .dropdown, .btn-green {
+          display: none !important;
+      }
+      .navbar-toggler {
+          display: block;
+      }
+
+  }
+
+  @media (max-width: 992px) {
+      .collapse.show {
+          display: flex !important;
+          flex-direction: column;
+          align-items: flex-start;
+          background-color: #f8f9fa;
+          width: 100%;
+          padding: 1rem;
+      }
+      .collapse.show .navbar-nav, .collapse.show .search-container, .collapse.show .dropdown, .collapse.show .btn-green {
+          display: block !important;
+          width: 100%;
+          text-align: left;
+          margin-bottom: 0.5rem;
+      }
+  }
+
+  @media (max-width: 576px) {
+    .img-small {
+      max-width: 80%;
+      height: auto;
+    }
+  }

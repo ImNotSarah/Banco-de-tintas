@@ -1,0 +1,40 @@
+.navbar{
+    background-color: rgb(207, 206, 206) !important;
+}
+
+.content-wrapper {
+background-color: #8EB041;
+padding: 2rem;
+border-radius: 8px;
+max-width: 1200px; 
+margin: 0 auto; 
+}
+.product-card {
+background-color: #fff;
+border-radius: 8px;
+box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+padding: 1rem;
+text-align: center;
+}
+.product-card img {
+max-width: 100%;
+border-radius: 5px;
+}
+.btn-interest {
+  background-color: #84469B;
+  color: white;
+  border: none;
+}
+
+.btn-interest:hover{
+  background-color: #cbb4d3;
+  color: black;
+}
+
+.pagination .page-link {
+color: #6a1b9a;
+}
+.pagination .page-item.active .page-link {
+background-color: #6a1b9a;
+border-color: #6a1b9a;
+}

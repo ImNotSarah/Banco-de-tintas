@@ -1,0 +1,123 @@
+.position_relative_20{
+    position: relative;
+    left: -20px;
+}
+
+.position_relative_5{
+    position: relative;
+    left: -5px;
+}
+
+.menu_color {
+    background-color: #cbb4d3;
+}
+
+.sidebar {
+    background-color: #cbb4d3;
+    padding-top: 20px;
+    height: auto; 
+}
+
+.main-content {
+    background-color: #84469B;
+    min-height: 100vh;
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.cards-container {
+    flex: 1; 
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.card {
+    background-color: #f8f9fa;
+}
+
+.menu_text {
+    font-weight: bold;
+}
+
+.link_bg_adm {
+    background-color: white;
+    border-radius: 9px;
+    margin-bottom: 5px;
+    color: black;
+}
+
+.link_bg_adm:hover {
+    background-color: #8eb041;
+    color: white;
+}
+
+.icone_btn_apagar{
+    margin-top: -4px;
+    color: white;
+}
+.mar_right-10{
+    margin-right: 10px;
+}
+
+.a_link_adm{
+    margin-top: 5px;
+    margin-right: 10px;
+
+}
+
+.btn-purple{
+    background-color: #84469B;
+    color: white;
+    border: none;
+}
+
+.btn-purple:hover{
+    background-color: #cbb4d3;
+    color: black;
+}
+.text_magenta:hover{
+    color: #8eb041;
+}
+.text_green_2{
+    color: #aef01d;
+}
+.icone_position{
+    position: relative;
+    top: -3px;
+}
+
+.btn_width{
+    width: 150px;
+}
+
+.trash_icon_position{
+    position: relative;
+    top: -38px;
+}
+
+.edit_icon_position{
+    position: relative;
+    top: -15px;;
+}
+
+.container-green{
+    width: 300px;
+    height: auto;
+    display: none;
+    background-color: #8eb041;
+    border-radius: 9px;
+}
+
+.input-small{
+    width: 200px;
+}
+.pad_bottom_5{
+    padding-bottom: 5px;
+}
+
+footer{
+  background-color: #cfcece !important;
+}

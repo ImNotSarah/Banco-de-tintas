@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tintas Disponíveis</title>
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="css/opcoes.css">
+  <link rel="stylesheet" href="css/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="shortcut icon" href="./icones/balde_tinta.png" type="image/x-icon">
+
+    <style>
+      .navbar{
+          background-color: #cfcece !important;
+        }
+        footer{
+          background-color: #cfcece !important;
+        }
+    </style>
+
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+
+        <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="./icones/balde_tinta.png" alt="Logo" width="70" height="70" class="d-inline-block align-text-center">
+            <span class="text_purple ms-2">Banco de Tintas</span> 
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active text_purple" aria-current="page" href="#">Quero doar</a>
+                </li>
+            </ul>
+
+            <div class="search-container">
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2 search-bar" type="search" placeholder="Pesquisar" aria-label="Search">
+                    <button class="btn btn-green btn-pesquisar" type="submit">Pesquisar</button>
+                </form>
+            </div>
+
+            <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item dropdown pad_right_20">
+                    <a class="nav-link dropdown-toggle text_purple" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Login
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Usuário</a></li>
+                        <li><a class="dropdown-item" href="#">Administrador</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item pad_right_20">
+                    <button class="btn btn-green" onclick="location.href='#'">Cadastre-se</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+  <div class="container my-5">
+    <div class="content-wrapper">
+      <h2 class="text-center mb-4 text_purple ">Tintas disponíveis</h2>
+      
+      <div class="row">
+
+        <div class="col-md-3">
+          <h5>Filtrar</h5>
+          <div class="mb-3">
+            <p class="fw-bold">Marcas</p>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="marcaSaci">
+              <label class="form-check-label" for="marcaSaci">Saci</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="marcaDorti">
+              <label class="form-check-label" for="marcaDorti">Dorti</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-9">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <span>Foram encontrados 45 resultados para sua pesquisa</span>
+            <select class="form-select w-auto" aria-label="Ordenar por">
+              <option selected>Ordenar por</option>
+              <option value="1">Preço</option>
+              <option value="2">Popularidade</option>
+              <option value="3">Data de validade</option>
+            </select>
+          </div>
+
+          <div class="row g-4">
+
+            <div class="col-md-6 col-lg-4">
+              <div class="product-card p-3">
+                <img src="imagens/img11.avif" alt="Tinta verde">
+                <h5 class="mt-3">Tinta verde</h5>
+                <p>Quantidade disponível: 3.5L</p>
+                <p>Data de validade: 10/12/2024</p>
+                <button class="btn btn-interest">Tenho Interesse</button>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <div class="product-card p-3">
+                <img src="imagens/img12.jpg" alt="Tinta rpsa">
+                <h5 class="mt-3">Tinta rosa</h5>
+                <p>Quantidade disponível: 3.5L</p>
+                <p>Data de validade: 10/12/2024</p>
+                <button class="btn btn-interest">Tenho Interesse</button>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="row g-4 pad_top_20">
+
+            <div class="col-md-6 col-lg-4">
+              <div class="product-card p-3">
+                <img src="imagens/img13.jpg" alt="Tinta amarela">
+                <h5 class="mt-3">Tinta amarela</h5>
+                <p>Quantidade disponível: 3.5L</p>
+                <p>Data de validade: 10/12/2024</p>
+                <button class="btn btn-interest">Tenho Interesse</button>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <div class="product-card p-3">
+                <img src="imagens/img14.jpg" alt="Tinta azul">
+                <h5 class="mt-3">Tinta azul</h5>
+                <p>Quantidade disponível: 3.5L</p>
+                <p>Data de validade: 10/12/2024</p>
+                <button class="btn btn-interest">Tenho Interesse</button>
+              </div>
+            </div>
+            
+          </div>
+
+
+          <nav aria-label="Page navigation" class="mt-4">
+            <ul class="pagination justify-content-center">
+              <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">&laquo;</a>
+              </li>
+              <li class="page-item active"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#">&raquo;</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        
+      </div>
+
+      
+    </div>
+  </div>
+
+
+    <footer class="mt-5">
+      <div class="container">
+          <div class="row text-center">
+              <div class="col-md-4 mb-4">
+                  <p class="text_justify">Banco de tintas é uma iniciativa da FATEC Jundiaí!</p>
+                  <p class="text_justify">
+                    <img src="./icones/insta.png" width="50px" height="50px" alt="logo instagram"> <a class="text_a_link text_purple" href="#">@fatecjd</a>
+                    
+                  </p>
+
+                  <p class="text_justify">
+                    <img src="./icones/insta.png" width="50px" height="50px" alt="logo instagram"> 
+                    <a class="text_a_link text_purple" href="#">@bancodetintasfatecjdi</a>
+                  </p>
+              </div>
+              <div class="col-md-4 mb-4">
+                  <img src="./icones/fatec_logo.png" alt="Logo" class="img-fluid" width="300px" height="50px">
+              </div>
+              <div class="col-md-4 mb-4">
+                  <p>Av. União dos Ferroviários, 1760 - Centro, Jundiaí - SP, 13201-160</p>
+              </div>
+          </div>
+      </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

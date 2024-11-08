@@ -1,0 +1,99 @@
+/* Gerais */
+body {
+    font-family: "Roboto" sans-serif;
+  }
+  
+  .row {
+    margin: 0;
+  }
+  
+  .container {
+    padding: 70px 0;
+  }
+  
+  p,
+  li {
+    color: #423746;
+    font-size: 14px;
+  }
+  
+  /* barra de navegação */
+  
+  header,
+  .navbar {
+    background-color: #ffff;
+  }
+  #nav-container {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  #logo {
+    width: 97px;
+    height: 91px;
+  }
+  .navbar-brand {
+    padding: 0;
+    color: #637046;
+    font-style: bold;
+    font-size: 36px;
+  }
+  /* Barra de pesquisa */
+  .caixa1 {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+  }
+  .caixa {
+    background-color: #ffff;
+  }
+  .input-wrapper {
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background-color: #e8e9ee;
+    border-radius: 9px;
+    border: 1px solid #8eb041;
+    width: 847px;
+    height: 60px;
+  }
+  .input-wrapper i {
+    color: #8eb041;
+  }
+  .input-wrapper input {
+    background-color: transparent;
+    border: none;
+    color: #423746;
+    width: 827px;
+    height: 50px;
+    font-size: 20px;
+  }
+  .input-wrapper input:focus-visible {
+    outline-offset: none;
+    outline: none;
+  }
+  
+  /* barra de navegação */
+  #navbar-links a {
+    color: #8eb041;
+    font-size: 24px;
+    padding-left: 70px;
+  }
+  
+  .navbar-expand-lg .navbar-nav .nav-ink {
+    padding: 1rem 0.8rem;
+  }
+  .btn-cadastre {
+    border-radius: 9px;
+    border: none;
+    background-color: #8eb041;
+    color: #423746;
+    width: 256;
+    height: 60;
+    padding: 5px;
+  }
+  
+
+  @media screen  {
+    
+  }
