@@ -88,7 +88,6 @@ body {
   margin: 0 auto;
 }
 
-/* Centraliza o conteúdo da aba de "Meus Pedidos" */
 #ordersAccordion {
   width: 100%;
   max-width: 800px; 
@@ -101,7 +100,7 @@ body {
   margin: 0 auto; 
 }
 .nav-link {
-  color: #423746;
+  color: #84469b;
 }
 
 .nav-link:hover {
@@ -141,4 +140,9 @@ body {
 
 .btn-purple:hover {
   background-color: #7a5bb0;
+}
+@media (max-width: 766px) {
+  .container{
+    max-width: 90%;
+  }
 }
