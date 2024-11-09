@@ -79,19 +79,38 @@ body {
   background-color: #f5f5f5;
   padding: 2rem;
   border-radius: 8px;
-  max-width: 600px;
+  max-width: 60%;
   margin-top: 10rem;
   margin-bottom: 3rem;
 }
+.dados_pessoais{
+  max-width: 600px;
+  margin: 0 auto;
+}
 
-.my-transparent-container {
-  background-color: rgba(211, 211, 197, 0.8);
+/* Centraliza o conteúdo da aba de "Meus Pedidos" */
+#ordersAccordion {
+  width: 100%;
+  max-width: 800px; 
+  margin: 0 auto; 
+}
+
+.accordion-item {
+  width: 100%;
+  max-width: 500px; 
+  margin: 0 auto; 
+}
+.nav-link {
+  color: #423746;
+}
+
+.nav-link:hover {
+    color: green; /* Cor ao passar o mouse */
 }
 
 .mb-4 {
   color: #423746;
 }
-
 
 .profile-img {
   width: 120px;
