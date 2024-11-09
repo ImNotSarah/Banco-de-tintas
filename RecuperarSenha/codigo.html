@@ -49,26 +49,23 @@
         <div class="row">
             <div class="col-12 col-md-3 d-flex align-items-center fundo_login"></div>
             <div class="col-12 col-md-3 d-flex align-items-center fundo_login">
-                <main class=" w-100 m-auto form-container">
+                <main class="w-100 m-auto form-container">
                     <form action="">
                         <h1 class="h3 mb-3 fw-bold text-light py-4">Recuperar Senha</h1>
-  
+
                         <div class="mb-3">
                             <label for="formInput" class="form-label">Insira o código enviado no seu e-mail</label>
                             <input type="text" class="form-control" id="codigo" required>
                         </div>
-
                         <div class="mb-3">
-                            <label for="formInput" class="form-label">Nova Senha</label>
-                            <input type="password" class="form-control" id="nova-senha" required>
+                            <label for="formInput" class="form-label">Não recebeu o código?</label>
+                            <a href="recuperar_senha.html" class="esqueci-senha">Clique aqui para reenvia-lo</a>
                         </div>
-                        <div class="mb-3">
-                            <label for="formInput" class="form-label">Repetir Senha</label>
-                            <input type="password" class="form-control" id="repetir-senha" required>
+                        <div class="d-flex gap-2">
+                            <button class="btn btn-cancelar btn-secondary w-50" onclick="window.location.href='login.html'">Cancelar</button>
+                            <button class="btn btn-primary w-50" onclick="window.location.href='nova_senha.html'">Ok</button>
                         </div>
 
-                        <button class="btn btn-entrar w-100 bt-senha" onclick="window.location.href='login.html'">Cadastrar nova senha</button>
-                        
                     </form>
                 </main>
             </div>

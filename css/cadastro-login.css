@@ -36,20 +36,37 @@ html {
     border-radius: 5px;           /* Bordas arredondadas */
     font-size: 16px;              /* Tamanho da fonte */
 }
-.btn {
+
+
+
+.btn-primary {
   background-color: #84469b;
   border: none;
   border-radius: 9px;
   height: 48px;
   font-size: 24px;
 }
+
 .btn:hover {
-  background-color: #84469b;
+  background-color: darkslateblue;
+}
+.btn-cancelar{
+  border-color: #84469b;
+  border-style: double;
+  background: none;
+  border-radius: 9px;
+  height: 48px;
+  font-size: 24px;
 }
 .esqueci-senha {
   text-align: center;
   padding-top: 10px;
+  color: #84469b;
 }
+.esqueci-senha:hover {
+  color: darkslateblue;
+}
+
 .cadastro {
   color: #84469b;
   font-weight: 700;
